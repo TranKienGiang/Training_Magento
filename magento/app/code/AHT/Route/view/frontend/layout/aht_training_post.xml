@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+   <body>
+       <referenceContainer name="content">
+           <block class="AHT\Route\Block\Display" name="aht_training_post" template="hello.phtml"/>
+       </referenceContainer>
+       <referenceContainer name="content">
+           <block class="AHT\Route\Block\Display" name="aht_training_post1" template="helloworld.phtml" before="-"/>
+       </referenceContainer>
+   </body>
+
+</page>

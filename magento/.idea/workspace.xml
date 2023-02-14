@@ -20,7 +20,7 @@
     <drupalPath />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Giang_Training_Magento" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="JoomlaConfiguration">
     <joomlaConfigPath />
@@ -592,7 +592,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ToolWindowDB Browser.ShowToolbar": "false",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/var/www/html/Giang_Training_Magento/magento",
+    "last_opened_file_path": "/var/www/html/Giang_Training_Magento",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -658,7 +658,8 @@
       <workItem from="1676078399103" duration="16294000" />
       <workItem from="1676251853858" duration="28931000" />
       <workItem from="1676297979448" duration="7634000" />
-      <workItem from="1676338669628" duration="3240000" />
+      <workItem from="1676338669628" duration="2879000" />
+      <workItem from="1676342047726" duration="501000" />
     </task>
     <servers />
   </component>
