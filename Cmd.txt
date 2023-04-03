@@ -1,10 +1,21 @@
 B1 : chay composer install;
-neu bat nhap auth thi vao file auth.json lay tai khoan amasty;
+  Đổi version php : sudo update-alternatives --config php
+  neu bat nhap auth thi vao file auth.json lay tai khoan amasty;
 B2 : coppy and edit env;
 B3 : sua trong db : url rewirte : core_config_data(path like url and elastic);
 B4 : add host tao config host.
+  cd /etc/nginx/sites-available
+  sudo gedit magento.conf   
+  
+  sudo nano /etc/hosts 
 B5 : chay set debug:  bin/magento deploy:mode:set developer.
 B6 : chay phan quyen;
+  ** Phân quyền
+  HTTPDUSER=`ps axo user,comm | grep -E '[a]pache|[h]ttpd|[_]www|[w]ww-data|[n]ginx' | grep -v root | head -1 | cut -d\  -f1`;
+  sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX var pub/static pub/media app/etc generated;
+  sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX var pub/static pub/media app/etc generated;
+  chmod u+x bin/magento
+
 B7 : chay sudo systemctl restart elasticsearch;
 B8 : chay php bin/magento setup:upgrade  + php bin/magento setup:di:compile    + php bin/magento setup:static-content:deploy -f  ;
 B9 : chay php bin/magento indexer:reindex;
