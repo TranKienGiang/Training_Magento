@@ -20,3 +20,8 @@ B7 : chay sudo systemctl restart elasticsearch;
 B8 : chay php bin/magento setup:upgrade  + php bin/magento setup:di:compile    + php bin/magento setup:static-content:deploy -f  ;
 B9 : chay php bin/magento indexer:reindex;
 B10: chay php bin/magento cache:clear;
+    Mail hook start : 
+      mailhog \                       
+        -api-bind-addr 127.0.0.1:8025 \
+        -ui-bind-addr 127.0.0.1:8025 \
+        -smtp-bind-addr 127.0.0.1:1025
