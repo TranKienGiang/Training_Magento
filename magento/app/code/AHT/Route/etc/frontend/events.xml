@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="customer_register_success">
+        <observer name="after_register" instance="AHT\Route\Observer\AfterRegister" />
+    </event>
+
+    <event name="customer_save_address">
+        <observer name="save_address" instance="AHT\Route\Observer\SaveAddress" />
+    </event>
+</config>

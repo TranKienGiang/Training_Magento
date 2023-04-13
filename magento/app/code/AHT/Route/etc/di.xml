@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="AHT\Route\Api\PostRepositoryInterface" type="AHT\Route\Model\PostRepository"/>
+    <preference for="AHT\Route\Api\Data\PostInterface" type="AHT\Route\Model\Post"/>
+    <preference for="Magento\Customer\Controller\Account\LoginPost" type="AHT\Route\Controller\Account\LoginCustomerPost"/>
+    <preference for="Magento\Customer\Controller\Address\FormPost" type="AHT\Route\Controller\Address\FormPost"/>
+    <type name="AHT\Route\Controller\Training\Post\Post">
+        <plugin name="custom_plugin1" type="AHT\Route\Plugin\Controller\Training\Post\PostPlugin" sortOrder="10" disabled="false" />
+    </type>
+
+    <type name="AHT\Route\Controller\Training\Post\Post">
+        <plugin name="custom_plugin2" type="AHT\Route\Plugin\Controller\Training\Post\PostPlugin1" sortOrder="20" disabled="true" />
+    </type>
+
+    <type name="Magento\Customer\Controller\Account\CreatePost">
+        <plugin name="custom_login" type="AHT\Route\Plugin\Controller\Account\CustomLoginPlugin" disabled="true" />
+    </type>
+
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="custom_name_product" type="AHT\Route\Plugin\Model\ProductPlugin" disabled="false" />
+    </type>
+</config>
