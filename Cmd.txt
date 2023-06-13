@@ -25,3 +25,15 @@ B10: chay php bin/magento cache:clear;
         -api-bind-addr 127.0.0.1:8025 \
         -ui-bind-addr 127.0.0.1:8025 \
         -smtp-bind-addr 127.0.0.1:1025
+        
+Block: load dữ liệu và gửi qua template .
+controller : Chứa các lớp điều khiển.
+etc: chứa các tệp cấu hình của module.
+Model: Chứa các lớp mô hình, các lớp mô hình này sẽ có nhiệm vụ làm việc với database.
+view: chứa các file template,js,layout,css,email.
+API: chứa các lớp PHP được hiển thị với API.
+Helper: chứa các chức năng tổng hợp sử dụng được ở bất cứ chỗ nào.
+i18n : chứa các file đa ngôn ngữ.
+Observer: Chứa các lớp qusan sát phản ứng với các sự kiện khác nhau để thức hiện một số hoạt động bổ sung.
+Plugin: chứa các file plugin cần thiết.
+UI: Chứa các lớp thành phần Ui được sử dụng để tiếp nhận, xử lý và hiển thị dữ liệu trong bảng quản trị của trang web.
